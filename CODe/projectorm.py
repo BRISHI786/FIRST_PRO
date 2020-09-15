@@ -22,5 +22,5 @@ class Prediction(Base) :
     input_id = Column(Integer, ForeignKey('userinputs.id'))
     
 if __name__ == "__main__":
-    engine = create_engine('sqlite:///utkarsh.sqlite3') # create Empty database name utkarsh.sqlite3
-    Base.metadata.create_all(engine) # create the above table
+    engine2 = create_engine('sqlite:///rishidatabase.sqlite3') # create Empty database name utkarsh.sqlite3
+    Base.metadata.create_all(engine2) # create the above table
